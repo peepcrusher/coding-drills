@@ -59,13 +59,11 @@ body {
 }
 
 .btn:hover {
-  transform: translateY(-1px);
   box-shadow: 0 .5rem .7rem rgba(0,0,0,.2);
 }
 
 .btn:active,
 .btn:focus {
-  transform: translateY(1px);
   outline: none;
   box-shadow: 0 .2rem .4rem rgba(0,0,0,.2);
 }
@@ -88,17 +86,55 @@ Therefore, we want our media queries in descending order, so that the most recen
   html {
     font-size: 55%;
   }
+.heading-primary{
+  color: blue;
 
+}
+.about__box--center{
+  background: orangered;
+  border: 5px solid purple;
+}
   
+p{
+  color: white;
+}
 }
 
 
 @media (max-width: 900px) {
 /* Set the font-size to 45% */
-
+html{
+  font-size: 45%;
 }
+.heading-primary{
+  color:purple;
+}
+.heading-sub{
+  color:green;
+  display: block;
+}
+.about__box--center{
+  border: 10px solid green;
+  background: yellow;
+  width: 40%;
+  margin: auto;
+  display:block;
+}
+
+p{
+  color: black;
+}
+.about{
+  display: flex;
+  flex-direction: column-reverse;
+  margin-top: 0;
+}
+}
+
 
 @media (max-width: 600px) {
   /* For the colorful background, look up setting a background-image to a linear gradient in css */
-
+body{
+  background-image: linear-gradient(to bottom right, green, purple );
+}
 }
