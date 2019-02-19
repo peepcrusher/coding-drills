@@ -22,10 +22,308 @@
 
 @media (max-width: 1250px) {
   .box-red {
+    height: 100px;
+    width: 100px;
+    background-color: red;
 
+    position: fixed;
+    top: 10px;
+    left: 5%;
   }
 
   .box-blue {
-    
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+
+    position: fixed;
+    bottom: 10px;
+    right: 5%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .box-red {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+
+    position: fixed;
+    top: 20px;
+    left: 5%;
+  }
+
+  .box-blue {
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+
+    position: fixed;
+    bottom: 20px;
+    right: 5%;
+  }
+}
+
+@media (max-width: 1100px) {
+  .box-red {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+
+    position: fixed;
+    top: 30px;
+    left: 5%;
+  }
+
+  .box-blue {
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+
+    position: fixed;
+    bottom: 30px;
+    right: 5%;
+  }
+}
+
+@media (max-width: 1050px) {
+  .box-red {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+
+    position: fixed;
+    top: 40px;
+    left: 5%;
+  }
+
+  .box-blue {
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+
+    position: fixed;
+    bottom: 40px;
+    right: 5%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .box-red {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+
+    position: fixed;
+    top: 50px;
+    left: 5%;
+  }
+
+  .box-blue {
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+
+    position: fixed;
+    bottom: 50px;
+    right: 5%;
+  }
+}
+
+@media (max-width: 950px) {
+  .box-red {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+
+    position: fixed;
+    top: 60px;
+    left: 5%;
+  }
+
+  .box-blue {
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+
+    position: fixed;
+    bottom: 60px;
+    right: 5%;
+  }
+}
+
+@media (max-width: 900px) {
+  .box-red {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+
+    position: fixed;
+    top: 70px;
+    left: 5%;
+  }
+
+  .box-blue {
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+
+    position: fixed;
+    bottom: 70px;
+    right: 5%;
+  }
+}
+
+@media (max-width: 850px) {
+  .box-red {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+
+    position: fixed;
+    top: 80px;
+    left: 5%;
+  }
+
+  .box-blue {
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+
+    position: fixed;
+    bottom: 80px;
+    right: 5%;
+  }
+}
+
+@media (max-width: 800px) {
+  .box-red {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+
+    position: fixed;
+    top: 90px;
+    left: 5%;
+  }
+
+  .box-blue {
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+
+    position: fixed;
+    bottom: 90px;
+    right: 5%;
+  }
+}
+
+@media (max-width: 750px) {
+  .box-red {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+
+    position: fixed;
+    top: 100px;
+    left: 5%;
+  }
+
+  .box-blue {
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+
+    position: fixed;
+    bottom: 100px;
+    right: 5%;
+  }
+}
+
+@media (max-width: 700px) {
+  .box-red {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+
+    position: fixed;
+    top: 110px;
+    left: 5%;
+  }
+
+  .box-blue {
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+
+    position: fixed;
+    bottom: 110px;
+    right: 5%;
+  }
+}
+
+@media (max-width: 650px) {
+  .box-red {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+
+    position: fixed;
+    top: 120px;
+    left: 5%;
+  }
+
+  .box-blue {
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+
+    position: fixed;
+    bottom: 120px;
+    right: 5%;
+  }
+}
+
+@media (max-width: 600px) {
+  .box-red {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+
+    position: fixed;
+    top: 130px;
+    left: 5%;
+  }
+
+  .box-blue {
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+
+    position: fixed;
+    bottom: 130px;
+    right: 5%;
+  }
+}
+
+@media (max-width: 550px) {
+  .box-red {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+
+    position: fixed;
+    top: 140px;
+    left: 5%;
+  }
+
+  .box-blue {
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+
+    position: fixed;
+    bottom: 140px;
+    right: 5%;
   }
 }
