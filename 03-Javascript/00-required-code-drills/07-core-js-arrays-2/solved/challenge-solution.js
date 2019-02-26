@@ -1,4 +1,4 @@
-// declare a variable named ourArray and assign an empty array to it
+ // declare a variable named ourArray and assign an empty array to it
 var ourArray = [];
 
 // we can `push` values into an array with the push method. Documentation can be found here:
