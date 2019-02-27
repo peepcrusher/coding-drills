@@ -47,7 +47,7 @@ $(document).ready(function () {
     textDiv.addClass("letter");
 
     // 3.4 use the var textDiv and add text that is equal to the this or button that creates the letter and add a attribute of a string data-letter 
-    textDiv.text($(this).attr("data-letter"));
+    textDiv.text($(this).addClass("data-letter"));
 
     // 3.5 select the body of the page and find the id of display and append textDiv to it
 
