@@ -29,19 +29,22 @@ var name = "Not California";
 
 console.log("==================== Question 01 ====================");
 // What is the value of `this.name`?
-// 
+// not california
+console.log(this.name);
 
 
 
 console.log("==================== Question 02 ====================");
 // What is the value of california.name?
-//
+//California
+console.log(california.name);
 
 
 
 console.log("==================== Question 03 ====================");
 // What does `california.getName()` return?
-//
+//California
+console.log(california.getName());
 
 
 
@@ -54,8 +57,8 @@ function stateCall(callback) {
 
   console.log("==================== Question 04 ====================");
   // What is the value of `location`?
-  //
-
+  //not california
+console.log(location);
 }
 
 

@@ -95,3 +95,14 @@ $(document).ready(function () {
 
         
 })
+
+
+
+
+function wordCount(words){
+    var array = words.split(" ")
+    console.log(array.length);
+}
+
+
+wordCount("oh hey, aren't you that person from that one thing?");
