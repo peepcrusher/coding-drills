@@ -14,6 +14,9 @@ var california = {
   visit: function () {
     console.log("Welcome to beautiful " + this.name);
   },
+  getCapital: function(){
+    console.log(this.capital)
+  },
   getName: function () {
     return this.name;
   },
@@ -70,22 +73,22 @@ console.log("==================== Question 05 ====================");
 // ================ Your code here ================
 
 
-
+california.getCapital();
 
 
 // ============== End of your code area ===========
 
 // console log the return value of your method here
 
-
+california.getCapital();
 // end of console log area
 
 
 
 console.log("==================== Question 06 ====================");
 // what does `california.sanfrancisco.getName()` return?
-//
-
+// San Francisco  
+console.log(california.sanfrancisco.getName());
 
 
 
@@ -95,10 +98,10 @@ cityCall(california.sanfrancisco.getName);
 function cityCall(callback) {
   // invoking the callback function we passed cityCall
   var location = callback()
-
+console.log(location);
   console.log("==================== Question 07 ====================");
   // What is the value of `location`?
-  //
+  //San Francisco
 
 }
 
@@ -110,7 +113,8 @@ function getName() {
 
 console.log("==================== Question 08 ====================");
 // What does `getName()` return?
-// 
+// not california
+console.log(getName());
 
 
 
@@ -135,7 +139,9 @@ function count() {
 
 console.log("==================== Question 09 ====================");
 // If we execute `count()` what does it console log out?
-//
+//it will print the even numbers first, then in a seperate line the odd numbers
+//I was wrong, it prints all the odd numbers until infinity
+// count();
 
 
 
@@ -146,8 +152,10 @@ function countWrapper() {
 
 console.log("==================== Question 10 ====================");
 // What is the return value of `countWrapper()`
-//
-
+//infinite numbers labled as odd when they are not. 
+countWrapper();
 
 
 // There's some short explanations about the behavior of `this` in the solutions file.
+
+//there is no parent, so this reffers to the window.

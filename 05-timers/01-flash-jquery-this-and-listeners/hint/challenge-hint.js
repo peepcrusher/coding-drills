@@ -8,16 +8,17 @@ function createButton(str) {
   // ---------- Your Code Here ----------
 
   // create a new button div
-
+var newButton = $("<button>")
 
   // add a class to the button so we can refer to it with our click listener
-
+newButton.addClass("clicker");
   
   // set the text and data of the button to be the argument given to this function
-
+newButton.text(str);
+newButton.data("content", str)
   
   // add the button div we've been working on to the button area
-
+$("#button-area").append(newButton);
   
 
   // ---------- End of Code area ----------
@@ -36,10 +37,10 @@ function displayContent(event) {
 
   // save the data from the button that was clicked. That button will be the
   // element that calls on this function
-
+var text = $(this).data("content");
   
   // append the string that was saved in the button to the display area
-
+$("#display-area").append(text);
 
 
   // ---------- End of Code area ----------
@@ -54,16 +55,26 @@ $(function () {
 
   // create a click listener on the buttons that we generate
   // and have it call on the `displayContent` function
-
+$(document).on("click", ".clicker", displayContent);
   
   // create a click listener for the "Clear" button. It should
   // empty the display area
+ $(document).on("click", "#clear-button", function(event){
+   event.preventDefault();
+    $("#display-area").empty()
+  })
 
 
   // create a click listener for the "Submit" button. It should
   // save the string the user input into the form and call on the
   // createButton function with that string
-
+$(document).on("click", "#submit-button", function(event){
+  event.preventDefault();
+  var userData = $("#user-input").val()
+  $("#user-input").val("")
+  createButton(userData);
+  
+})
   
 
   // ---------- End of Code area ----------
