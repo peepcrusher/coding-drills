@@ -72,7 +72,10 @@
 
 
     // STEP 4: Based on your research of this API, assign a value to queryURL you think is appropriate to retrieve the top news stories in the US. 
-    var queryURL = "";
+    var key = "a58ca2d70c104114abc22d4ead26c422";
+    var queryURL = 'https://newsapi.org/v2/top-headlines?' +
+          'country=us&' +
+          'apiKey=' + key;
 
 
     $.ajax({
@@ -81,11 +84,23 @@
     }).then(function (response) {
       
       // STEP 5. This is where we'll render our responses to the DOM. 
-      
+     console.log(response);
         // Because we want to render multiple responses, we will need to use a loop. 
-
+      for(i=0; i<4; i++){
+      console.log(response.articles[i]);
         // Jquery gives us a few methods to render content to our app. .text(), .html(), .append(), .prepend(). Use whichever of these you find most appropriate in this case. Remember, our goal is to render the articles inside of the div with the class of news.
-
+        if(response.articles[i].author === null){
+        $(".appendMe").append("<div>" + "<h3>" + "<class = 'title'>" + response.articles[i].title + "</h3>");
+          $(".appendMe").append("<p class ='author'>" + "Sam Thompson" + "</p>");
+          $(".appendMe").append("<p class ='desc'>" + response.articles[i].description + "</p>");
+          $(".appendMe").append("<hr>" + "</div>");
+        }
+        else {
+          $(".appendMe").append("<div>" + "<h3>" + "<class = 'title'>" + response.articles[i].title + "</h3>");
+          $(".appendMe").append("<p class ='author'>" + response.articles[i].author + "</p>");
+          $(".appendMe").append("<p class ='desc'>" + response.articles[i].description + "</p>");
+          $(".appendMe").append("<hr>" + "</div>");
+        }
         // Check out the .news div for a clue as to which method we should use in this context.
 
         // Render the content in this format: 
@@ -107,7 +122,7 @@
       // Step 6. By now, you should have been able to render all of the articles to the news div.
       
       // You may notice that some of the articles' authors come back as null. Let's fix that. Within your loop, create a condition which checks to see if the author has value. If it doesn't, have the author instead read your own name
-      
+        }
     });
 
 
