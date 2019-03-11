@@ -105,7 +105,7 @@
 
         var paid = $("#paid").val();
         var eventName = $("#eventName").val(); // Grab the value of the #eventName input
-        var location = $("#location"); // Grab the value of the #location input
+        var location = $("#location").val(); // Grab the value of the #location input
 
         // Construct your query URL here using the values the user gave us.
         queryURL = "https://www.eventbriteapi.com/v3/events/search/?q=" + eventName + "&price=" + paid + "&location.address="+ location +"&token=XWZMBG5MHQU6BZJXJNV2"
