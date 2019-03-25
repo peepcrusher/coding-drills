@@ -7,7 +7,7 @@
 
 // ---------- code starts here ----------
 
-
+console.log("Hello World!");
 
 
 
@@ -18,7 +18,7 @@
 // next console log the command line arguments when this file is run in node
 
 // ---------- code starts here ---------- 
-
+console.log(process.argv)
 
 
 
@@ -34,7 +34,8 @@
 // ---------- code starts here ---------- 
 
 
-
+console.log(process.argv[2])
+console.log(process.argv[3])
 
 
 
@@ -49,9 +50,13 @@
 // ---------- code starts here ---------- 
 
 
+if(process.argv[2] === "minion" && process.argv[3] === "army"){
+    console.log("I have found Gru");
+}
 
-
-
+if(process.argv[2] === "minion" && process.argv[3] !== "army"){
+    console.log("Still looking for Gru")
+}
 
 
 // ---------- code ends here ---------- 
